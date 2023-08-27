@@ -1,0 +1,42 @@
+/* makes width of containers their total width rather than having to add
+the padding and margin to the width */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body{
+    margin:0px;
+}
+
+ul{
+    padding:0px;
+    margin:0px;
+}
+
+ul.nav{
+    display:flex;
+    margin-inline:20%;
+    gap:10px;
+    font-size:1.5em;
+    list-style-type: none;
+}
+
+li.logo{
+    margin-right:auto;
+}
+li.nav{
+    padding:4px;
+}
+
+.hero{
+    
+}
+
+*{
+    border: 1px solid red;
+}
