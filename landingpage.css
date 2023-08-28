@@ -26,9 +26,22 @@ ul{
 
 div.nav-container{
     display:flex;
-    margin: auto;
+    flex-direction: column;
+    margin:auto;
+    padding-top:5px;
+    max-width:980px;
+
+}
+
+div.nav-content{
+    display:flex;
     max-width:960px;
+    margin-inline:10px;
     gap:20px;
+}
+
+.nav-container{
+    margin-inline:10px;
 }
 
 ul.nav-buttons{
@@ -39,9 +52,12 @@ ul.nav-buttons{
     list-style-type: none;
 }
 
+/* debug rule :)
 *{
     border: 1px solid red;
 }
+*/
+
 
 nav, footer, .hero{
     background-color: #1F2937;
@@ -53,6 +69,7 @@ nav, footer, .hero{
 }
 
 
+
 .hero{
     display:flex;
     justify-content: center;
@@ -61,10 +78,10 @@ nav, footer, .hero{
 .hero-content{
     display:flex;
     flex-wrap:wrap;
-    margin-inline:auto;
-    height:290px;
+    justify-content: center;
     width:960px;
     max-width:960px;
+    margin-inline:10px;
     gap:15px;
 }
 
@@ -74,14 +91,16 @@ nav, footer, .hero{
 }
 
 .hero-brand-pitch{
-    flex:1;
-    max-width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1 1 290px;
+    max-width:480px;
     padding-right:1%;
 }
 
 .hero-brand-picture{
-    width:50%;
-    height:100%;
+    max-width:480px;
     overflow:hidden;
     position:relative;
 
@@ -154,15 +173,15 @@ img.hero{
 }
 
 .testimonial.section{
+    display:flex;
+    justify-content: center;
     background-color: #E5E7EB;
 }
 
 .testimonial.content{
     display:flex;
     flex-direction:column;
-    flex:1;
-    align-items: center;
-    margin-block:50px;
+    padding-block:50px;
     margin-inline:auto;
     font-size:1.5em;
     font-style:italic;
@@ -170,7 +189,7 @@ img.hero{
 
 p.testimonial{
     flex: 1;
-    width:625px;
+    max-width:625px;
     margin:0px;
 }
 
@@ -185,7 +204,57 @@ p.testimonial{
     justify-content:center;
 }
 
-.discount-content{
+.discount-shape{
+    display:flex;
+    width:960px;
+    margin-block:75px;
+    border-radius:20px;
     background-color: #3882F6;
+    color:#E5E7EB;
+}
 
+.discount-content{
+    display:flex;
+    flex:0 1 660px;
+    flex-flow:row wrap;
+    align-items:center;
+    margin:auto;
+}
+
+.discount-text{
+    display:flex;
+    flex-direction: column;
+    flex:4 1 313px;
+    justify-content: center;
+    padding-block:30px;
+}
+
+.discount-text > p{
+    margin:0px;
+}
+
+.shop{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    width:100px;
+    background-color: #3882F6;
+    border-radius:5px;
+    padding-block:.25em;
+    color:#E5E7EB;
+}
+
+.discount-content > .shop{
+
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    height:fit-content;
+    flex:1 0 100px;
+    border: 2px solid white;
+    text-align:center;
+}
+
+footer{
+    text-align: center;
 }
