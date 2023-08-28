@@ -24,9 +24,11 @@ ul{
     margin:0px;
 }
 
-div.nav-menu{
+div.nav-container{
     display:flex;
+    margin: auto;
     max-width:960px;
+    gap:20px;
 }
 
 ul.nav-buttons{
@@ -35,10 +37,6 @@ ul.nav-buttons{
     gap:10px;
     font-size:1.5em;
     list-style-type: none;
-}
-
-li.logo{
-    margin-right:auto;
 }
 
 *{
@@ -50,6 +48,10 @@ nav, footer, .hero{
     color:#F9FAF8;
 }
 
+.nav.logo{
+    margin-right:auto;
+}
+
 
 .hero{
     display:flex;
@@ -59,24 +61,36 @@ nav, footer, .hero{
 .hero-content{
     display:flex;
     flex-wrap:wrap;
+    margin-inline:auto;
+    height:290px;
+    width:960px;
+    max-width:960px;
+    gap:15px;
 }
 
 .hero-brand-pitch, .hero-product-picture{
     min-width:240px;
     margin-block:20px;
-    flex:1;
 }
 
 .hero-brand-pitch{
+    flex:1;
     max-width:50%;
     padding-right:1%;
 }
 
-.hero-product-picture{
-    height:180px;
+.hero-brand-picture{
+    width:50%;
+    height:100%;
     overflow:hidden;
     position:relative;
 
+}
+
+.hero-brand-picture-container{
+    display:flex;
+    height:100%;
+    align-items:center;
 }
 
 .noMargin{
@@ -84,11 +98,14 @@ nav, footer, .hero{
 }
 
 img.hero{
-    
+    height:87%;
+    object-fit: cover;
+    align-self: center;
 }
 
 .popular-products-content{
-    margin-inline:20%;
+    max-width:900px;
+    margin-inline:auto;
 }
 
 .popular-products-title{
@@ -136,6 +153,39 @@ img.hero{
     margin-inline:15%;
 }
 
-.testimonial{
+.testimonial.section{
     background-color: #E5E7EB;
+}
+
+.testimonial.content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    align-items: center;
+    margin-block:50px;
+    margin-inline:auto;
+    font-size:1.5em;
+    font-style:italic;
+}
+
+p.testimonial{
+    flex: 1;
+    width:625px;
+    margin:0px;
+}
+
+.testimonial.source{
+    margin-top:0px;
+    text-align:end;
+}
+
+.discount{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.discount-content{
+    background-color: #3882F6;
+
 }
