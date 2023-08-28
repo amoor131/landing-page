@@ -5,89 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="/landingpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <ul class="nav">
-          <li class="nav logo">
-            <a> Ant's Threads </a>
-          </li>
-          <li class="nav"><a>Pants</a></li>
-
-          <li class="nav"><a>Hoodies</a></li>
-          <li class="nav"><a>Accessories</a></li>
-        </ul>
+        <div class="nav-container">
+          <div class="nav logo"><a>Ant's Threads</a></li>
+          <div class="nav button"><a>Pants</a></li>
+          <div class="nav button"><a>Hoodies</a></li>
+          <div class="nav button"><a>Accessories</a></li>
+          </div>
       </nav>
       <div class="hero">
-        <div class="hero-brand-pitch">
-          <h1>Soft as a cloud, Built like an ox</h1>
-          <p>
-            Our premium hand-crafted clothes are ethically sourced and built to
-            last
-          </p>
-          <a class="shop" href="/shop">Shop Now</a>
-        </div>
-        <div class="hero-product-picture">
-          <img src="/" />
+        <div class="hero-content">
+          <div class="hero-brand-pitch">
+            <h1 class="noMargin">Soft as a cloud, Built like an ox</h1>
+            <p>
+              Our premium hand-crafted clothes are ethically sourced and built
+              to last
+            </p>
+            <a class="shop" href="/shop">Shop Now</a>
+          </div>
+          <div class="hero-brand-picture">
+            <img class="hero" src="/images/" style="background-color: green;"/>
+          </div>
         </div>
       </div>
     </header>
     <div class="popular-products">
-      <h1 class="popular-products-title">
-        Check out our most popular products
-      </h1>
-      <div>
-        <div class="popular-product">
-          <img class="popular-product-image" />
-          <p>Our ultra light windbreaker with buttoned kangaroo pouch</p>
-        </div>
-        <div>
-          <img />
-          <p>
-            Wrap yourself in the ultimate cocoon of comfort with our CozyTeddy™
-            Hoodie.
-          </p>
-        </div>
-        <div>
-          <img class="popular-product-image" />
-          <p>
-            Say goodbye to stiff, restrictive jeans and hello to a new era of
-            freedom and style with our FlexiComfort™ Jeans
-          </p>
-        </div>
-        <div>
-          <img class="popular-product-image" />
-          <p>
-            Discover a world of enchanted sophistication with the heartwarming
-            charm of teddy bears
-          </p>
-        </div>
-        <div>
-          <img class="popular-product-image" />
-          <p>
-            A cozy retreat, a soft embrace, and a playful adventure all wrapped
-            in one. Get ready to experience a world of comfort and whimsy like
-            never before.
-          </p>
+      <div class="popular-products-content">
+        <h1 class="popular-products-title">
+          Check out our most popular products
+        </h1>
+        <div class="popular-products-cards">
+          <div class="popular-product">
+            <div class="popular-product-image-container">
+              <img
+                class="popular-product-image"
+                style="top: -32px"
+                src="/images/windbreaker.jpg"
+              />
+            </div>
+            <p>ultra light windbreaker</p>
+          </div>
+          <div class="popular-product">
+            <div class="popular-product-image-container">
+              <img
+                class="popular-product-image"
+                src="/images/fuzzy hoodie.jpg"
+              />
+            </div>
+            <p>the ultimate cocoon of comfort</p>
+          </div>
+          <div class="popular-product">
+            <div class="popular-product-image-container">
+              <img class="popular-product-image" src="/images/jeans.jpg" />
+            </div>
+            <p>Say hello to a new era of mobility and style</p>
+          </div>
+          <div class="popular-product">
+            <div class="popular-product-image-container">
+              <img class="popular-product-image" src="/images/jewelry.jpg" />
+            </div>
+            <p>teddy bear charms with enchanted sophistication</p>
+          </div>
         </div>
       </div>
     </div>
-    <div>
-      <p>
+    <div class="testimonial content">
+      <p class="testimonial">
         You know those days when life gets a bit overwhelming, and adulting
         feels like an extreme sport? Well, I've found my secret weapon – let's
         call it 'The Comfort Arsenal.' I've gotta hand it to Ant's Threads for
         creating products designed with my laziest, coziest dreams in mind.
       </p>
-      <p>Comfort Crusader</p>
+      <p class="testimonial source">Comfort Crusader</p>
     </div>
-    <div>
-      <div>
-        <p>Staying cozy on a budget?</p>
-        <p>Take a look at our wallet-friendly selection!</p>
-        <a>Shop Now</a>
+    <div class="discount">
+      <div class="discount-content">
+        <p class="discount-title">Staying cozy on a budget?</p>
+        <p class="discount-callToAction">
+          Take a look at our wallet-friendly selection!
+        </p>
+        <a class="shop">Shop Now</a>
       </div>
     </div>
+    <footer>
+      <small>Copyright Anthony's Threads 2023</small>
+    </footer>
   </body>
 </html>
